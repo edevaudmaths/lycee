@@ -1,6 +1,10 @@
 /* =========================
-   RESET GLOBAL
+   RESET
 ========================= */
+
+* {
+  box-sizing: border-box;
+}
 
 html, body {
   margin: 0;
@@ -10,32 +14,17 @@ html, body {
 }
 
 /* =========================
-   FOND PAR PAGE (IMPORTANT)
+   FOND PAR PAGE (CONSERVÉ)
 ========================= */
 
 body {
   background: #f5f7fb;
 }
 
-/* Seconde */
-body.seconde {
-  background: #f3e8ff;
-}
-
-/* Spe */
-body.spe {
-  background: #fff1e6;
-}
-
-/* ST2S */
-body.st2s {
-  background: #ffe6ef;
-}
-
-/* BTS */
-body.bts {
-  background: #e8f2ff;
-}
+body.seconde { background: #f3e8ff; }
+body.spe     { background: #fff1e6; }
+body.st2s    { background: #ffe6ef; }
+body.bts     { background: #e8f2ff; }
 
 /* =========================
    HEADER
@@ -47,22 +36,10 @@ header {
   color: white;
   text-align: center;
   padding: 40px 20px;
-  margin: 0;
 }
 
 h1 {
   margin: 0;
-}
-
-/* info haut gauche */
-.top-left-info {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 12px;
-  text-align: left;
-  line-height: 1.3;
-  color: white;
 }
 
 /* =========================
@@ -151,7 +128,7 @@ h1 {
 }
 
 /* =========================
-   MAIN (IMPORTANT ANTI-RUPTURE)
+   MAIN
 ========================= */
 
 main {
@@ -166,7 +143,6 @@ main {
 
 .sub-section {
   display: none;
-  width: 100%;
   max-width: 1200px;
   margin: auto;
 }
@@ -176,7 +152,7 @@ main {
 }
 
 /* =========================
-   GRILLE 2 COLONNES
+   GRILLE 2 COLONNES (IMPORTANT)
 ========================= */
 
 .cards-container {
@@ -186,35 +162,13 @@ main {
   padding: 20px;
 }
 
-/* mobile */
+/* mobile → 1 colonne */
 @media (max-width: 700px) {
   .cards-container {
     grid-template-columns: 1fr;
   }
 }
-* =========================
-   SÉCURITÉ GRILLE (desktop stable)
-========================= */
 
-.home-container {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px;
-  max-width: 700px;
-  margin: 40px auto;
-  padding: 20px;
-}
-
-.app-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 120px;
-  border-radius: 15px;
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
-}
 /* =========================
    CARD
 ========================= */
@@ -237,7 +191,7 @@ main {
 }
 
 /* =========================
-   ACTION BUTTONS
+   ACTIONS
 ========================= */
 
 .actions {
@@ -264,38 +218,19 @@ main {
 }
 
 /* =========================
-   COULEURS PAR PAGE
+   COULEURS PAR PAGE (CONSERVÉES)
 ========================= */
 
-.seconde .card {
-  border-left: 6px solid #a78bfa;
-}
-
-.spe .card {
-  border-left: 6px solid #fdba74;
-}
-
-.st2s .card {
-  border-left: 6px solid #f9a8d4;
-}
-
-.bts .card {
-  border-left: 6px solid #93c5fd;
-}
+.seconde .card { border-left: 6px solid #a78bfa; }
+.spe .card     { border-left: 6px solid #fdba74; }
+.st2s .card    { border-left: 6px solid #f9a8d4; }
+.bts .card     { border-left: 6px solid #93c5fd; }
 
 /* boutons */
 .seconde .actions a { background: rgba(167,139,250,0.18); }
 .spe .actions a     { background: rgba(253,186,116,0.18); }
 .st2s .actions a    { background: rgba(249,168,213,0.18); }
 .bts .actions a     { background: rgba(147,197,253,0.18); }
-
-/* hover harmonisé */
-.seconde .actions a:hover,
-.spe .actions a:hover,
-.st2s .actions a:hover,
-.bts .actions a:hover {
-  filter: brightness(1.1);
-}
 
 /* =========================
    BIENVENUE
@@ -312,16 +247,6 @@ main {
   text-align: center;
 }
 
-.card.welcome h2 {
-  margin-top: 0;
-  color: #6f7680;
-}
-
-.card.welcome p {
-  color: #555;
-  line-height: 1.6;
-}
-
 /* =========================
    FOOTER
 ========================= */
@@ -336,22 +261,15 @@ main {
 }
 
 /* =========================
-   FIX MOBILE SAFE (sans toucher desktop)
+   MOBILE SAFE
 ========================= */
 
-
 @media (max-width: 600px) {
-
-  .home-container {
-    grid-template-columns: 1fr !important;
-  }
-
-  .app-card {
-    min-height: 100px;
-    font-size: 16px;
-  }
-
   .cards-container {
     grid-template-columns: 1fr;
+  }
+
+  .search-box input {
+    width: 90%;
   }
 }
