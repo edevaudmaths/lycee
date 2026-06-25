@@ -362,3 +362,25 @@ header {
   }
 }
 
+/* ===== COULEUR PAR PAGE ===== */
+
+.seconde header,
+.seconde .card {
+  border-left: 6px solid #a78bfa;
+}
+
+.spe header,
+.spe .card {
+  border-left: 6px solid #fdba74;
+}
+
+.st2s header,
+.st2s .card {
+  border-left: 6px solid #f9a8d4;
+}
+
+.bts header,
+.bts .card {
+  border-left: 6px solid #93c5fd;
+}
+
