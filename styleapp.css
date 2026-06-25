@@ -312,3 +312,29 @@ main {
   border-top: 1px solid #ddd;
   background: white;
 }
+
+/* =========================
+   FIX MOBILE SAFE (sans toucher desktop)
+========================= */
+
+@media (max-width: 600px) {
+
+  /* grille accueil → 1 colonne uniquement sur mobile */
+  .home-container {
+    grid-template-columns: 1fr !important;
+    gap: 12px;
+    padding: 10px;
+  }
+
+  /* cartes accueil toujours visibles */
+  .app-card {
+    width: 100%;
+    min-height: 110px;
+    font-size: 16px;
+  }
+
+  /* éviter les débordements iPhone */
+  body {
+    overflow-x: hidden;
+  }
+}
