@@ -301,7 +301,28 @@ header {
   transform: scale(1.03);
   opacity: 0.9;
 }
+/* ===== CADRE BIENVENUE ===== */
+.card.welcome {
+  max-width: 800px;
+  margin: 30px auto 20px auto;
+  padding: 25px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-left: 6px solid #a0a7b1;
+  text-align: center;
+}
 
+.card.welcome h2 {
+  margin-top: 0;
+  color: #6f7680;
+}
+
+.card.welcome p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 15px;
+}
 /* mobile */
 @media (max-width: 600px) {
   .home-container {
@@ -340,25 +361,4 @@ header {
     font-size: 10px;
   }
 }
-/* ===== CADRE BIENVENUE ===== */
-.card.welcome {
-  max-width: 800px;
-  margin: 30px auto 20px auto;
-  padding: 25px;
-  border-radius: 16px;
-  background: #ffffff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  border-left: 6px solid #a0a7b1;
-  text-align: center;
-}
 
-.card.welcome h2 {
-  margin-top: 0;
-  color: #6f7680;
-}
-
-.card.welcome p {
-  color: #555;
-  line-height: 1.6;
-  font-size: 15px;
-}
