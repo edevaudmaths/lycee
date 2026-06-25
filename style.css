@@ -5,6 +5,12 @@ body {
   color: #1e2a38;
 }
 
+:root {
+  --seconde: #0b2d4d;
+  --spe: #6a1b9a;
+  --st2s: #2e7d32;
+  --bts: #ef6c00;
+}
 /* HEADER */
 header {
   background: #0b2d4d;
@@ -41,7 +47,51 @@ header {
   background: #1f6feb;
   color: white;
 }
+.menu-btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+}
 
+/* SECONDE */
+body.seconde .menu-btn.active {
+  background: var(--seconde);
+}
+
+/* SPE */
+body.spe .menu-btn.active {
+  background: var(--spe);
+}
+
+/* ST2S */
+body.st2s .menu-btn.active {
+  background: var(--st2s);
+}
+
+/* BTS */
+body.bts .menu-btn.active {
+  background: var(--bts);
+}
+body.seconde .sub-btn.active {
+  background: var(--seconde);
+  color: white;
+}
+
+body.spe .sub-btn.active {
+  background: var(--spe);
+  color: white;
+}
+
+body.st2s .sub-btn.active {
+  background: var(--st2s);
+  color: white;
+}
+
+body.bts .sub-btn.active {
+  background: var(--bts);
+  color: white;
+}
 /* CONTENU */
 main {
   max-width: 900px;
@@ -84,7 +134,21 @@ main {
     width: 95%;
   }
 }
+body.seconde .card-header {
+  background: var(--seconde);
+}
 
+body.spe .card-header {
+  background: var(--spe);
+}
+
+body.st2s .card-header {
+  background: var(--st2s);
+}
+
+body.bts .card-header {
+  background: var(--bts);
+}
 /* BOUTONS RESSOURCES */
 .actions {
   display: flex;
