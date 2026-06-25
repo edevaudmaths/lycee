@@ -1,4 +1,6 @@
-function showSec(id) {
+
+/* ===== SOUS-ONGLETS ===== */
+function showSec(id, event) {
 
   const sections = document.querySelectorAll(".sub-section");
   sections.forEach(s => s.classList.remove("active"));
@@ -8,9 +10,12 @@ function showSec(id) {
   const buttons = document.querySelectorAll(".sub-btn");
   buttons.forEach(b => b.classList.remove("active"));
 
-  // bouton cliqué
-  event.target.classList.add("active");
+  if (event) {
+    event.target.classList.add("active");
+  }
 }
+
+/* ===== MENU ACTIF AUTOMATIQUE ===== */
 document.addEventListener("DOMContentLoaded", () => {
 
   const links = document.querySelectorAll(".menu-btn");
@@ -26,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+/* ===== BARRE DE RECHERCHE ===== */
 function searchChapters() {
 
   const input = document.getElementById("searchInput");
