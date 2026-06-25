@@ -230,10 +230,11 @@ main {
 .footer a:hover {
   text-decoration: underline;
 }
+/* bloc info en haut à gauche */
 .top-left-info {
   position: absolute;
   top: 10px;
-  left: 15px;
+  left: 10px;
   text-align: left;
   font-size: 12px;
   color: white;
