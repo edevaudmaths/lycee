@@ -6,194 +6,189 @@
   <link rel="stylesheet" href="styleapp.css">
 </head>
 
-<body class="st2s" >
+<body class="st2s">
 
 <header>
+
   <h1>Première ST2S</h1>
 
   <nav class="menu">
     <a class="menu-btn" href="index.html">Accueil</a>
-    <a class="menu-btn " href="seconde.html">Seconde</a>
-    <a class="menu-btn " href="spe.html">Première Spé</a>
+    <a class="menu-btn" href="seconde.html">Seconde</a>
+    <a class="menu-btn" href="spe.html">Première Spé</a>
     <a class="menu-btn active" href="st2s.html">Première ST2S</a>
     <a class="menu-btn" href="bts.html">BTS</a>
   </nav>
 
   <div class="sub-menu">
     <button class="sub-btn active" onclick="showSec('cl',event)">Cours et exercices</button>
-  
     <button class="sub-btn" onclick="showSec('auto',event)">Automatismes</button>
     <button class="sub-btn" onclick="showSec('ds',event)">DS</button>
-    <button class="sub-btn" onclick="showSec('bac',event)">Epreuve en fin de première</button>
+    <button class="sub-btn" onclick="showSec('bac',event)">Épreuve fin de première</button>
   </div>
+
 </header>
+
+<main>
+
+<!-- SEARCH -->
 <div class="search-box">
   <input type="text" id="searchInput" placeholder="🔎 Rechercher un chapitre..." onkeyup="searchChapters()">
 </div>
-<main>
 
-<!-- EAM -->
+<!-- ================= BAC ================= -->
 <section id="bac" class="sub-section">
-<div class="cards-container">
-  <div class="card">
-    <h3>Epreuve en fin de première </h3>
-    <p>Epreuve de 2h. 6pts QCM et 14pts avec exercices sur tout le programme</p>
 
-    <div class="actions">
-      <a href="pdf/PremiereTechno2026.pdf" raget="_blank">📖 Le programme officiel </a>
-      <a href="pdf/coeff.pdf"> Les coefficents au BAC</a>
-    </div>
-  </div>
-  </div>
-</section>
-
-<!-- CLASSE -->
-<section id="cl" class="sub-section active">
-<div class="cards-container">
-   <div class="card">
-    <h3>Chapitre 0 : Révisions sur les pourcentages </h3>
-    <p>...</p>
-
-    <div class="actions">
-      <a href="#" target="_blank">📖 Cours</a>
-      <a href="#" target="_blank">✏️ Exercices</a>
-      <a href="#" target="_blank">✅ Corrigé</a>
-
-    </div>
-  </div>
-  <div class="card">
-    <h3>Chapitre 1 :  </h3>
-    <p>...</p>
-
-    <div class="actions">
-     <a href="#" target="_blank">📖 Cours</a>
-      <a href="#" target="_blank">✏️ Exercices</a>
-      <a href="#" target="_blank">✅ Corrigé</a>
-
-    </div>
-  </div>
-  
-
-  <div class="card">
-    <h3>Chapitre 2 : </h3>
-    <p>.</p>
-
-    <div class="actions">
-      <a href="#" target="_blank">📖 Cours</a>
-      <a href="#" target="_blank">✏️ Exercices</a>
-      <a href="#" target="_blank">✅ Corrigé</a>
-    </div>
-  </div>
-   <div class="card">
-    <h3>Chapitre 3 : </h3>
-    <p>.</p>
-
-    <div class="actions">
-     <a href="#" target="_blank">📖 Cours</a>
-      <a href="#" target="_blank">✏️ Exercices</a>
-      <a href="#" target="_blank">✅ Corrigé</a>
-    </div>
-  </div>
-   <div class="card">
-    <h3>Chapitre 4 : </h3>
-    <p>.</p>
-
-    <div class="actions">
-     <a href="#" target="_blank">📖 Cours</a>
-      <a href="#" target="_blank">✏️ Exercices</a>
-      <a href="#" target="_blank">✅ Corrigé</a>
-    </div>
-  </div>
-   <div class="card">
-    <h3>Chapitre 5 : </h3>
-    <p>.</p>
-
-    <div class="actions">
-     <a href="#" target="_blank">📖 Cours</a>
-      <a href="#" target="_blank">✏️ Exercices</a>
-      <a href="#" target="_blank">✅ Corrigé</a>
-    </div>
-  </div>
-   <div class="card">
-    <h3>Chapitre 6 : </h3>
-    <p>.</p>
-
-    <div class="actions">
-      <a href="#" target="_blank">📖 Cours</a>
-      <a href="#" target="_blank">✏️ Exercices</a>
-      <a href="#" target="_blank">✅ Corrigé</a>
-    </div>
-  </div>
-   <div class="card">
-    <h3>Chapitre 7 : </h3>
-    <p>.</p>
-
-    <div class="actions">
-     <a href="#" target="_blank">📖 Cours</a>
-      <a href="#" target="_blank">✏️ Exercices</a>
-      <a href="#" target="_blank">✅ Corrigé</a>
-    </div>
-  </div>
-   <div class="card">
-    <h3>Chapitre 8 : </h3>
-    <p>.</p>
-
-    <div class="actions">
-     <a href="#" target="_blank">📖 Cours</a>
-      <a href="#" target="_blank">✏️ Exercices</a>
-      <a href="#" target="_blank">✅ Corrigé</a>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- AUTOMATISMES -->
-<section id="auto" class="sub-section">
-  <p> Calculatrice interdite.<br>
-Épreuve de 2h coefficient 2  + note dans le "dossier Parcoursup".<br>
-Un QCM de 6 points sur les automatismes (cf. document ci-joint) puis deux ou trois exercices.<br>
-Trois sujets différents : bac technologique/ bac général sans spécialité mathématiques/ spécialité mathématiques..</p>
   <div class="cards-container">
- <div class="card">
-    <h3>Le programme officiel des automatismes  </h3>
 
-   <div class="actions">
-      <a href="pdf/AUTOMATISMES.pdf" target="_blank">📖 Liste des automatismes évalués</a>
+    <div class="card">
+      <h3>Épreuve en fin de première</h3>
+      <p>
+        Épreuve de 2h : QCM + exercices sur tout le programme.
+      </p>
+
+      <div class="actions">
+        <a href="pdf/PremiereTechno2026.pdf" target="_blank">📖 Programme officiel</a>
+        <a href="pdf/coeff.pdf" target="_blank">📊 Coefficients BAC</a>
+      </div>
     </div>
+
   </div>
 
-  <div class="card">
-    <h3>Livret d'automatismes </h3>
-<p> Sans calculatrice. 5 questions sur 5 automatismes chaque semaine. 
-Pour chaque semaine,  réviser les automatismes correspondants à ceux du calendrier,  annoncés sur Pronote. 
-Puis un exercice à chaque DS.</p>
-
-    <div class="actions">
-      <a href="#" target="_blank">📖 Livret</a>
-      <a href="#" target="_blank"> Progression prévue</a>
-    </div>
-  </div>
-  </div>
 </section>
 
-<!-- DS -->
-<section id="ds" class="sub-section">
-<div class="cards-container">
-  <div class="card">
-    
-    <h3>DS 1</h3>
-    
+<!-- ================= COURS ================= -->
+<section id="cl" class="sub-section active">
 
-    <div class="actions">
-      <a href="#" target="_blank">📄 Sujet</a>
-      <a href="#" target="_blank">✅ Correction</a>
+  <div class="cards-container">
+
+    <div class="card">
+      <h3>Chapitre 0 : Révisions sur les pourcentages</h3>
+      <div class="actions">
+        <a href="#">📖 Cours</a>
+        <a href="#">✏️ Exercices</a>
+        <a href="#">✅ Corrigé</a>
+      </div>
     </div>
+
+    <div class="card"><h3>Chapitre 1</h3>
+      <div class="actions">
+        <a href="#">📖 Cours</a>
+        <a href="#">✏️ Exercices</a>
+        <a href="#">✅ Corrigé</a>
+      </div>
+    </div>
+
+    <div class="card"><h3>Chapitre 2</h3>
+      <div class="actions">
+        <a href="#">📖 Cours</a>
+        <a href="#">✏️ Exercices</a>
+        <a href="#">✅ Corrigé</a>
+      </div>
+    </div>
+
+    <div class="card"><h3>Chapitre 3</h3>
+      <div class="actions">
+        <a href="#">📖 Cours</a>
+        <a href="#">✏️ Exercices</a>
+        <a href="#">✅ Corrigé</a>
+      </div>
+    </div>
+
+    <div class="card"><h3>Chapitre 4</h3>
+      <div class="actions">
+        <a href="#">📖 Cours</a>
+        <a href="#">✏️ Exercices</a>
+        <a href="#">✅ Corrigé</a>
+      </div>
+    </div>
+
+    <div class="card"><h3>Chapitre 5</h3>
+      <div class="actions">
+        <a href="#">📖 Cours</a>
+        <a href="#">✏️ Exercices</a>
+        <a href="#">✅ Corrigé</a>
+      </div>
+    </div>
+
+    <div class="card"><h3>Chapitre 6</h3>
+      <div class="actions">
+        <a href="#">📖 Cours</a>
+        <a href="#">✏️ Exercices</a>
+        <a href="#">✅ Corrigé</a>
+      </div>
+    </div>
+
+    <div class="card"><h3>Chapitre 7</h3>
+      <div class="actions">
+        <a href="#">📖 Cours</a>
+        <a href="#">✏️ Exercices</a>
+        <a href="#">✅ Corrigé</a>
+      </div>
+    </div>
+
+    <div class="card"><h3>Chapitre 8</h3>
+      <div class="actions">
+        <a href="#">📖 Cours</a>
+        <a href="#">✏️ Exercices</a>
+        <a href="#">✅ Corrigé</a>
+      </div>
+    </div>
+
   </div>
-</div>
+
+</section>
+
+<!-- ================= AUTOMATISMES ================= -->
+<section id="auto" class="sub-section">
+
+  <p>
+    Calculatrice interdite.<br>
+    Épreuve de 2h coefficient 2 + note Parcoursup.
+  </p>
+
+  <div class="cards-container">
+
+    <div class="card">
+      <h3>Programme des automatismes</h3>
+      <div class="actions">
+        <a href="pdf/AUTOMATISMES.pdf" target="_blank">📖 Liste des automatismes</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Livret d'automatismes</h3>
+      <p>Travail régulier + évaluations.</p>
+      <div class="actions">
+        <a href="#">📖 Livret</a>
+        <a href="#">📊 Progression</a>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= DS ================= -->
+<section id="ds" class="sub-section">
+
+  <div class="cards-container">
+
+    <div class="card">
+      <h3>DS 1</h3>
+      <div class="actions">
+        <a href="#">📄 Sujet</a>
+        <a href="#">✅ Correction</a>
+      </div>
+    </div>
+
+  </div>
+
 </section>
 
 </main>
 
 <script src="script.js"></script>
+
 </body>
 </html>
