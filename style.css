@@ -65,15 +65,23 @@ main {
 .cards-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-  max-width: 1000px;
-  margin: auto;
-}
+  gap: 20px;
 
-/* mobile */
-@media (max-width: 700px) {
+  width: 95%;
+  max-width: 1400px;  /* 👈 augmente la largeur globale */
+  margin: auto;
+  padding: 20px;
+}
+.card {
+  padding: 20px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+@media (max-width: 900px) {
   .cards-container {
     grid-template-columns: 1fr;
+    width: 95%;
   }
 }
 
