@@ -21,12 +21,6 @@ header {
   padding: 40px 20px;
 }
 
-.subtitle {
-  margin-top: 5px;
-  font-size: 14px;
-  opacity: 0.8;
-}
-
 /* info haut gauche */
 .top-left-info {
   position: absolute;
@@ -39,7 +33,7 @@ header {
 }
 
 /* =========================
-   MENU PRINCIPAL
+   MENU
 ========================= */
 
 .menu {
@@ -78,8 +72,8 @@ header {
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-top: 10px;
   flex-wrap: wrap;
+  margin-top: 10px;
 }
 
 .sub-btn {
@@ -123,17 +117,14 @@ header {
   font-size: 14px;
 }
 
-.search-box input:focus {
-  border-color: #a0a7b1;
-}
-
 /* =========================
    SECTIONS
 ========================= */
 
 .sub-section {
   display: none;
-  max-width: 900px;
+  width: 100%;
+  max-width: 1200px;
   margin: auto;
   padding: 20px;
 }
@@ -149,7 +140,6 @@ header {
 .card {
   background: white;
   padding: 18px;
-  margin-bottom: 15px;
   border-radius: 14px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.08);
   transition: 0.2s;
@@ -165,7 +155,25 @@ header {
 }
 
 /* =========================
-   ACTION BUTTONS (BASE)
+   GRILLE 2 COLONNES
+========================= */
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* mobile */
+@media (max-width: 700px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   ACTIONS (BOUTONS)
 ========================= */
 
 .actions {
@@ -188,15 +196,18 @@ header {
 
 .actions a:hover {
   transform: translateY(-1px);
-  filter: brightness(1.05);
+  filter: brightness(1.1);
 }
 
 /* =========================
-   COULEURS PAR PAGE (SYSTÈME PROPRE)
+   COULEURS PAR PAGE
 ========================= */
 
 /* SECONDE */
-.seconde header,
+.seconde main {
+  background: #f3e8ff;
+}
+
 .seconde .card {
   border-left: 6px solid #a78bfa;
 }
@@ -205,12 +216,11 @@ header {
   background: rgba(167,139,250,0.18);
 }
 
-.seconde .actions a:hover {
-  background: rgba(167,139,250,0.30);
+/* SPE */
+.spe main {
+  background: #fff1e6;
 }
 
-/* SPE */
-.spe header,
 .spe .card {
   border-left: 6px solid #fdba74;
 }
@@ -219,12 +229,11 @@ header {
   background: rgba(253,186,116,0.18);
 }
 
-.spe .actions a:hover {
-  background: rgba(253,186,116,0.30);
+/* ST2S */
+.st2s main {
+  background: #ffe6ef;
 }
 
-/* ST2S */
-.st2s header,
 .st2s .card {
   border-left: 6px solid #f9a8d4;
 }
@@ -233,12 +242,11 @@ header {
   background: rgba(249,168,213,0.18);
 }
 
-.st2s .actions a:hover {
-  background: rgba(249,168,213,0.30);
+/* BTS */
+.bts main {
+  background: #e8f2ff;
 }
 
-/* BTS */
-.bts header,
 .bts .card {
   border-left: 6px solid #93c5fd;
 }
@@ -247,53 +255,13 @@ header {
   background: rgba(147,197,253,0.18);
 }
 
-.bts .actions a:hover {
-  background: rgba(147,197,253,0.30);
-}
-
-/* =========================
-   ACCUEIL
-========================= */
-
-.home-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  max-width: 700px;
-  margin: 40px auto;
-  padding: 20px;
-}
-
-.app-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 120px;
-  border-radius: 15px;
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: none;
-  color: white;
-  transition: 0.2s;
-}
-
-.app-card:hover {
-  transform: scale(1.03);
-  opacity: 0.9;
-}
-
-.app-card.seconde { background: #a78bfa; }
-.app-card.spe { background: #fdba74; }
-.app-card.st2s { background: #f9a8d4; }
-.app-card.bts { background: #93c5fd; }
-
 /* =========================
    BIENVENUE
 ========================= */
 
 .card.welcome {
   max-width: 800px;
-  margin: 30px auto 20px auto;
+  margin: 30px auto;
   padding: 25px;
   border-radius: 16px;
   background: white;
@@ -310,7 +278,6 @@ header {
 .card.welcome p {
   color: #555;
   line-height: 1.6;
-  font-size: 15px;
 }
 
 /* =========================
@@ -324,29 +291,4 @@ header {
   color: #6f7680;
   border-top: 1px solid #ddd;
   background: white;
-}
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 600px) {
-  .home-container {
-    grid-template-columns: 1fr;
-    gap: 15px;
-    padding: 10px;
-  }
-
-  header {
-    padding: 25px 10px;
-  }
-
-  .card.welcome {
-    margin: 15px 10px;
-    padding: 18px;
-  }
-
-  .top-left-info {
-    font-size: 10px;
-  }
 }
