@@ -260,7 +260,50 @@ main {
   border-left: 6px solid #a0a7b1;
   text-align: center;
 }
+/* =========================
+   ACCUEIL FIX FINAL (SAFE)
+========================= */
 
+.home-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* cartes toujours visibles */
+.app-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 110px;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+}
+
+/* couleurs */
+.app-card.seconde { background: #a78bfa; }
+.app-card.spe     { background: #fdba74; }
+.app-card.st2s    { background: #f9a8d4; }
+.app-card.bts     { background: #93c5fd; }
+
+.app-card:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
+/* mobile uniquement */
+@media (max-width: 600px) {
+  .home-container {
+    grid-template-columns: 1fr;
+  }
+}
 /* =========================
    FOOTER
 ========================= */
