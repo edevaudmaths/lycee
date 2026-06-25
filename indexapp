@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mathématiques-Mme Devaud </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<div class="top-left-info">
+  Lycée Camus Sermenaz<br>
+  Mme Devaud<br>
+  Professeure agrégée de mathématiques
+</div>
+  <h1>Mathématiques</h1>
+<nav class="menu">
+  <a class="menu-btn" href="index.html">Accueil</a>
+  <a class="menu-btn" href="seconde.html">Seconde</a>
+  <a class="menu-btn" href="spe.html">Première Spé</a>
+  <a class="menu-btn" href="st2s.html">Première ST2S</a>
+  <a class="menu-btn" href="bts.html">BTS</a>
+</nav>
+</header>
+
+<main>
+  <div class="card">
+    <h2>Bienvenue 👋</h2>
+    <p>Vous trouverez ici tous les cours, exercices et ressources de mathématiques pour l'année 2026-2027.
+    <br> Si vous constatez une erreur dans un document, n'hésitez pas à m'en informer. </p>
+  </div>
+</main>
+<footer class="footer">
+  <p>📧 Contact (en dernier recours) : <a href="mailto:emeline.devaud@ac-lyon.fr">emeline.devaud@ac-lyon.fr</a></p>
+</footer>
+</body>
+</html>
