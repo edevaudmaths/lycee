@@ -263,28 +263,19 @@ main {
 /* =========================
    ACCUEIL FIX FINAL (SAFE)
 ========================= */
-
 .home-container {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-  max-width: 700px;
-  margin: 30px auto;
-  padding: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;          /* ↓ réduit */
+  max-width: 650px;   /* ↓ un peu plus serré */
+  margin: 10px auto;  /* ↓ réduit */
+  padding: 8px;       /* ↓ réduit */
 }
 
-/* cartes toujours visibles */
 .app-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 110px;
-  border-radius: 16px;
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: none;
-  color: white;
-  transition: 0.2s;
+  height: 90px;       /* ↓ plus compact */
+  border-radius: 14px;
+  font-size: 16px;
 }
 
 /* couleurs */
