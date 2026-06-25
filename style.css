@@ -44,6 +44,7 @@ body {
   border-radius: 8px;
   border: 2px solid #ddd;
   background: white;
+  cursor: pointer;
 }
 
 .sub-btn.active {
@@ -51,7 +52,7 @@ body {
   color: white;
 }
 
-/* ===== SECTIONS ===== */
+/* ===== AFFICHAGE DES SECTIONS ===== */
 .sub-section {
   display: none;
 }
@@ -60,7 +61,7 @@ body {
   display: block;
 }
 
-/* ===== GRILLE ===== */
+/* ===== GRILLE 2 COLONNES ===== */
 .cards-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -87,73 +88,6 @@ body {
 }
 
 /* ===== BOUTONS ACTIONS ===== */
-.actions a {
-  display: inline-block;
-  padding: 6px 12px;
-  margin: 5px 5px 0 0;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  border: 2px solid #0b2d4d;
-  color: #0b2d4d;
-}
-
-.actions a:hover {
-  background: #0b2d4d;
-  color: white;
-}
-
-/* ===== MOBILE ===== */
-@media (max-width: 800px) {
-  .cards-container {
-    grid-template-columns: 1fr;
-  }
-}  gap: 10px;
-  margin: 10px;
-}
-
-.sub-btn {
-  padding: 8px 12px;
-  border-radius: 8px;
-  border: 2px solid #ddd;
-  background: white;
-  cursor: pointer;
-}
-
-/* ===== AFFICHAGE SECTIONS ===== */
-.sub-section {
-  display: none;
-}
-
-.sub-section.active {
-  display: block;
-}
-
-/* ===== GRILLE ===== */
-.cards-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  max-width: 1400px;
-  margin: auto;
-  padding: 20px;
-}
-
-/* ===== CARD ===== */
-.card {
-  background: white;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-}
-
-.card-header {
-  padding: 12px;
-  color: white;
-  font-weight: bold;
-}
-
-/* ===== ACTIONS ===== */
 .actions {
   padding: 10px;
 }
@@ -165,37 +99,15 @@ body {
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
+  border: 2px solid #0b2d4d;
+  color: #0b2d4d;
   background: white;
-  border: 2px solid #ddd;
 }
 
-/* ===== SECONDE ===== */
-body.seconde .card-header { background: #0b2d4d; }
-body.seconde .actions a { color: #0b2d4d; border-color: #0b2d4d; }
-body.seconde .actions a:hover { background: #0b2d4d; color: white; }
-body.seconde .sub-btn.active { background: #0b2d4d; color: white; }
-body.seconde .menu-btn.active { background: #0b2d4d; color: white; }
-
-/* ===== SPE ===== */
-body.spe .card-header { background: #6a1b9a; }
-body.spe .actions a { color: #6a1b9a; border-color: #6a1b9a; }
-body.spe .actions a:hover { background: #6a1b9a; color: white; }
-body.spe .sub-btn.active { background: #6a1b9a; color: white; }
-body.spe .menu-btn.active { background: #6a1b9a; color: white; }
-
-/* ===== ST2S ===== */
-body.st2s .card-header { background: #2e7d32; }
-body.st2s .actions a { color: #2e7d32; border-color: #2e7d32; }
-body.st2s .actions a:hover { background: #2e7d32; color: white; }
-body.st2s .sub-btn.active { background: #2e7d32; color: white; }
-body.st2s .menu-btn.active { background: #2e7d32; color: white; }
-
-/* ===== BTS ===== */
-body.bts .card-header { background: #ef6c00; }
-body.bts .actions a { color: #ef6c00; border-color: #ef6c00; }
-body.bts .actions a:hover { background: #ef6c00; color: white; }
-body.bts .sub-btn.active { background: #ef6c00; color: white; }
-body.bts .menu-btn.active { background: #ef6c00; color: white; }
+.actions a:hover {
+  background: #0b2d4d;
+  color: white;
+}
 
 /* ===== MOBILE ===== */
 @media (max-width: 800px) {
