@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Première ST2S - Mme Devaud</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Première Spé</h1>
+
+  <nav class="menu">
+    <a class="menu-btn" href="index.html">Accueil</a>
+    <a class="menu-btn " href="seconde.html">Seconde</a>
+    <a class="menu-btn " href="spe.html">Première Spé</a>
+    <a class="menu-btn active" href="st2s.html">ST2S</a>
+    <a class="menu-btn" href="bts.html">BTS</a>
+  </nav>
+
+  <div class="sub-menu">
+    <button class="sub-btn active" onclick="showSec('cl')">Cours et exercices</button>
+  <button class="sub-btn" onclick="showSec('bac')">Epreuve en fin de première</button>
+    <button class="sub-btn" onclick="showSec('auto')">Automatismes</button>
+    <button class="sub-btn" onclick="showSec('ds')">DS</button>
+  </div>
+</header>
+<div class="search-box">
+  <input type="text" id="searchInput" placeholder="🔎 Rechercher un chapitre..." onkeyup="searchChapters()">
+</div>
+<main>
+
+<!-- EAM -->
+<section id="bac" class="sub-section">
+
+  <div class="card">
+    <h3>Chapitre 1 :  </h3>
+    <p>...</p>
+
+    <div class="actions">
+      <a href="pdf/seconde/ch1.pdf" raget="_blank">📖 Cours</a>
+      <a href="pdf/seconde/exos-fonctions.pdf">✏️ Exercices</a>
+      <a href="pdf/seconde/corr-fonctions.pdf">✅ Corrigé</a>
+<a href="pdf/seconde/corr-fonctions.pdf">🤯Exercices supplémentaires corrigés </a>
+      <a href="https://www.geogebra.org" target="_blank">🌐 GeoGebra</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Chapitre 2 : Statistiques</h3>
+    <p>Moyenne, médiane, dispersion.</p>
+
+    <div class="actions">
+      <a href="#">📖 Cours</a>
+      <a href="#">✏️ Exercices</a>
+      <a href="#">🎥 Vidéo</a>
+    </div>
+  </div>
+
+</section>
+
+<!-- CLASSE -->
+<section id="cl" class="sub-section active">
+
+  <div class="card">
+    <h3>Chapitre 1 :  </h3>
+    <p>...</p>
+
+    <div class="actions">
+      <a href="pdf/seconde/ch1.pdf" raget="_blank">📖 Cours</a>
+      <a href="pdf/seconde/exos-fonctions.pdf">✏️ Exercices</a>
+      <a href="pdf/seconde/corr-fonctions.pdf">✅ Corrigé</a>
+<a href="pdf/seconde/corr-fonctions.pdf">🤯Exercices supplémentaires corrigés </a>
+      <a href="https://www.geogebra.org" target="_blank">🌐 GeoGebra</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Chapitre 2 : Statistiques</h3>
+    <p>Moyenne, médiane, dispersion.</p>
+
+    <div class="actions">
+      <a href="#">📖 Cours</a>
+      <a href="#">✏️ Exercices</a>
+      <a href="#">🎥 Vidéo</a>
+    </div>
+  </div>
+
+</section>
+
+<!-- AUTOMATISMES -->
+<section id="auto" class="sub-section">
+ <div class="card">
+    <h3>Le programme officiel des automatismes  </h3>
+<p> Calculatrice interdite.<br>
+Épreuve de 2h coefficient 2  + note dans le "dossier Parcoursup".<br>
+Un QCM de 6 points sur les automatismes (cf. document ci-joint) puis deux ou trois exercices.<br>
+Trois sujets différents : bac technologique/ bac général sans spécialité mathématiques/ spécialité mathématiques..</p>
+
+    <div class="actions">
+      <a href="pdf/seconde/auto1.pdf">📖 Livret</a>
+      <a href="pdf/seconde/auto1exo.pdf"> Progression prévue</a>
+    </div>
+  </div>
+  <div class="card">
+    <h3>Livret d'automatismes </h3>
+<p> Sans calculatrice. 5 questions sur 5 automatismes chaque semaine. 
+Pour chaque semaine,  réviser les automatismes correspondants à ceux du calendrier,  annoncés sur Pronote. 
+Puis un exercice à chaque DS.</p>
+
+    <div class="actions">
+      <a href="pdf/seconde/auto1.pdf">📖 Livret</a>
+      <a href="pdf/seconde/auto1exo.pdf"> Progression prévue</a>
+    </div>
+  </div>
+
+</section>
+
+<!-- DS -->
+<section id="ds" class="sub-section">
+
+  <div class="card">
+    <h3>DS 1</h3>
+
+    <div class="actions">
+      <a href="pdf/seconde/ds1.pdf">📄 Sujet</a>
+      <a href="pdf/seconde/ds1corr.pdf">✅ Correction</a>
+    </div>
+  </div>
+
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
