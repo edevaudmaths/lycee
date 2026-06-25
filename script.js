@@ -1,43 +1,25 @@
-
 function showSec(id, event) {
+  // sécurise section
+  const section = document.getElementById(id);
+  if (!section) return;
 
-  document.querySelectorAll(".sub-section")
-    .forEach(s => s.classList.remove("active"));
+  // reset sections
+  document.querySelectorAll('.sub-section')
+    .forEach(s => s.classList.remove('active'));
 
-  document.getElementById(id).classList.add("active");
+  section.classList.add('active');
 
-  document.querySelectorAll(".sub-btn")
-    .forEach(b => b.classList.remove("active"));
+  // reset boutons
+  document.querySelectorAll('.sub-btn')
+    .forEach(b => b.classList.remove('active'));
 
-  if (event) event.target.classList.add("active");
+  // bouton actif fiable (iOS FIX)
+  const btn = event?.currentTarget;
+  if (btn) btn.classList.add('active');
 }
-/* ===== SOUS-ONGLETS ===== */
 
-/* ===== MENU ACTIF AUTOMATIQUE ===== */
+/* sécurité au chargement */
 document.addEventListener("DOMContentLoaded", () => {
-
-  const links = document.querySelectorAll(".menu-btn");
-  const currentPage = window.location.pathname.split("/").pop();
-
-  links.forEach(link => {
-    if (link.getAttribute("href") === currentPage) {
-      link.classList.add("active");
-    }
-  });
-
+  const first = document.querySelector('.sub-section');
+  if (first) first.classList.add('active');
 });
-
-/* ===== RECHERCHE ===== */
-function searchChapters() {
-
-  const input = document.getElementById("searchInput");
-  const filter = input.value.toLowerCase();
-
-  const cards = document.querySelectorAll(".card");
-
-  cards.forEach(card => {
-    const text = card.textContent.toLowerCase();
-    card.style.display = text.includes(filter) ? "" : "none";
-  });
-
-}
