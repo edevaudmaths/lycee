@@ -238,5 +238,6 @@ main {
   text-align: left;
   font-size: 12px;
   color: white;
+  font-style:italic;
   line-height: 1.3;
 }
