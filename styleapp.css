@@ -168,19 +168,22 @@ header {
   gap: 10px;
   margin-top: 10px;
 }
-
+/* ===== HOVER GLOBAL PAR DÉFAUT ===== */
+/* ===== HOVER GLOBAL PAR DÉFAUT ===== */
 .actions a {
-  background: #8b9199;
-  color: white;
-  padding: 8px 12px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-size: 14px;
+  background: rgba(0,0,0,0.08);
+  color: #1e2a38;
+  transition: 0.2s;
 }
+
+.seconde .actions a { background: rgba(167,139,250,0.15); }
+.spe .actions a     { background: rgba(253,186,116,0.15); }
+.st2s .actions a    { background: rgba(249,168,213,0.15); }
+.bts .actions a     { background: rgba(147,197,253,0.15); }
 
 .actions a:hover {
-  background: #0b4fc2;
-}
+  transform: translateY(-1px);
+  filter: brightness(1.05);
 
 /* ===== BOUTON EXTERNE ===== */
 .external-btn {
