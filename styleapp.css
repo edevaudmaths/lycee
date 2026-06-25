@@ -1,5 +1,7 @@
+/* =========================
+   BASE
+========================= */
 
-/* ===== BASE ===== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -7,50 +9,45 @@ body {
   color: #1e2a38;
 }
 
-.home-info {
-  text-align: center;
-  font-size: 11px;
-  color: #8a8a8a;
-  margin-top: 6px;
-  font-style: italic;
-}
-.seconde main {
-  background: #f3e8ff;
-}
+/* =========================
+   HEADER
+========================= */
 
-.spe main {
-  background: #fff1e6;
-}
-
-.st2s main {
-  background: #ffe6ef;
-}
-
-.bts main {
-  background: #e8f2ff;
-}
-
-main {
-  border-radius: 20px;
-  padding: 20px;
-}
-/* ===== HEADER ===== */
 header {
+  position: relative;
   background: #8b9199;
   color: white;
-  padding: 20px;
   text-align: center;
-  position: relative;
+  padding: 40px 20px;
 }
 
-/* ===== MENU ===== */
+.subtitle {
+  margin-top: 5px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* info haut gauche */
+.top-left-info {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 12px;
+  text-align: left;
+  line-height: 1.3;
+  color: white;
+}
+
+/* =========================
+   MENU PRINCIPAL
+========================= */
+
 .menu {
   display: flex;
   justify-content: center;
   gap: 12px;
   flex-wrap: wrap;
   margin-top: 10px;
-  text-align: center;
 }
 
 .menu-btn {
@@ -73,9 +70,43 @@ header {
   color: white;
 }
 
+/* =========================
+   SUB MENU
+========================= */
 
+.sub-menu {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
 
-/* ===== SEARCH ===== */
+.sub-btn {
+  background: white;
+  border: 2px solid #8b9199;
+  color: #8b9199;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.sub-btn:hover {
+  background: #e9ecf1;
+}
+
+.sub-btn.active {
+  background: #a0a7b1;
+  color: white;
+  border-color: #a0a7b1;
+}
+
+/* =========================
+   SEARCH
+========================= */
+
 .search-box {
   display: flex;
   justify-content: center;
@@ -93,35 +124,13 @@ header {
 }
 
 .search-box input:focus {
-  border-color: #b8bec6;
-}
-
-/* ===== SUB MENU ===== */
-.sub-menu {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 10px;
-  flex-wrap: wrap;
-}
-
-.sub-btn {
-  background: white;
-  border: 2px solid #8b9199;
-  color: #8b9199;
-  padding: 8px 14px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.sub-btn.active {
-  background: #a0a7b1;
-  color: white;
   border-color: #a0a7b1;
 }
 
-/* ===== SECTIONS ===== */
+/* =========================
+   SECTIONS
+========================= */
+
 .sub-section {
   display: none;
   max-width: 900px;
@@ -133,12 +142,10 @@ header {
   display: block;
 }
 
-/* ===== CARDS ===== */
+/* =========================
+   CARDS
+========================= */
 
-.card h3 {
-  margin-top: 0;
-  color: #8b9199;
-}
 .card {
   background: white;
   padding: 18px;
@@ -151,130 +158,103 @@ header {
 .card:hover {
   transform: translateY(-2px);
 }
-/* ===== 2 COLONNES ===== */
-.cards-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
+
+.card h3 {
+  margin-top: 0;
+  color: #6f7680;
 }
 
-/* ===== ACTIONS ===== */
+/* =========================
+   ACTION BUTTONS (BASE)
+========================= */
+
 .actions {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 10px;
 }
-/* ===== HOVER GLOBAL PAR DÉFAUT ===== */
-/* ===== HOVER GLOBAL PAR DÉFAUT ===== */
+
 .actions a {
-  background: rgba(0,0,0,0.08);
-  color: #1e2a38;
-  transition: 0.2s;
-}
-
-.seconde .actions a { background: rgba(167,139,250,0.15); }
-.spe .actions a     { background: rgba(253,186,116,0.15); }
-.st2s .actions a    { background: rgba(249,168,213,0.15); }
-.bts .actions a     { background: rgba(147,197,253,0.15); }
-
-.actions a:hover {
-  transform: translateY(-1px);
-  filter: brightness(1.05);
-
-/* ===== BOUTON EXTERNE ===== */
-.external-btn {
   display: inline-block;
-  margin-top: 10px;
-  background: #8b9199;
-  color: white;
   padding: 8px 12px;
   border-radius: 10px;
   text-decoration: none;
   font-size: 14px;
+  color: #1e2a38;
+  background: rgba(0,0,0,0.06);
+  transition: 0.2s;
 }
 
-.external-btn:hover {
-  background: #8b9199;
+.actions a:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
 }
 
-.footer {
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-  color: #6f7680;
-  font-size: 14px;
-  border-top: 1px solid #ddd;
-  background: white;
+/* =========================
+   COULEURS PAR PAGE (SYSTÈME PROPRE)
+========================= */
+
+/* SECONDE */
+.seconde header,
+.seconde .card {
+  border-left: 6px solid #a78bfa;
 }
 
-
-
-/* ton contenu principal doit pousser le footer */
-main {
-  flex: 1;
+.seconde .actions a {
+  background: rgba(167,139,250,0.18);
 }
 
-/* FOOTER */
-.footer {
-  text-align: center;
-  padding: 15px;
-  font-size: 13px;
-  color: #6f7680;
-  border-top: 1px solid #ddd;
-  background: white;
+.seconde .actions a:hover {
+  background: rgba(167,139,250,0.30);
 }
 
-.footer a {
-  color: #8a8a8a;
-  text-decoration: none;
-  font-weight: bold;
+/* SPE */
+.spe header,
+.spe .card {
+  border-left: 6px solid #fdba74;
 }
 
-.footer a:hover {
-  text-decoration: underline;
-}
-/* bloc info en haut à gauche */
-.top-left-info {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  text-align: left;
-  font-size: 12px;
-  color: white;
-  font-style:italic;
-  line-height: 1.3;
-}
-/* ===== HEADER APP ===== */
-header {
-  position: relative;
-  background: #8b9199;
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
+.spe .actions a {
+  background: rgba(253,186,116,0.18);
 }
 
-.subtitle {
-  margin-top: 5px;
-  font-size: 14px;
-  opacity: 0.8;
+.spe .actions a:hover {
+  background: rgba(253,186,116,0.30);
 }
 
-/* info lycée en haut gauche */
-.top-left-info {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 12px;
-  text-align: left;
-  line-height: 1.3;
-  color: white;
+/* ST2S */
+.st2s header,
+.st2s .card {
+  border-left: 6px solid #f9a8d4;
 }
 
-/* ===== ACCUEIL APP ===== */
+.st2s .actions a {
+  background: rgba(249,168,213,0.18);
+}
+
+.st2s .actions a:hover {
+  background: rgba(249,168,213,0.30);
+}
+
+/* BTS */
+.bts header,
+.bts .card {
+  border-left: 6px solid #93c5fd;
+}
+
+.bts .actions a {
+  background: rgba(147,197,253,0.18);
+}
+
+.bts .actions a:hover {
+  background: rgba(147,197,253,0.30);
+}
+
+/* =========================
+   ACCUEIL
+========================= */
+
 .home-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -284,7 +264,6 @@ header {
   padding: 20px;
 }
 
-/* ===== CARTES APP ===== */
 .app-card {
   display: flex;
   align-items: center;
@@ -298,23 +277,26 @@ header {
   transition: 0.2s;
 }
 
-/* couleurs par filière */
-.app-card.seconde { background: #a78bfa; }  /* violet pastel */
-.app-card.spe { background: #fdba74; }      /* orange pastel */
-.app-card.st2s { background: #f9a8d4; }     /* rose pastel */
-.app-card.bts { background: #93c5fd; }      /* bleu pastel */
-
 .app-card:hover {
   transform: scale(1.03);
   opacity: 0.9;
 }
-/* ===== CADRE BIENVENUE ===== */
+
+.app-card.seconde { background: #a78bfa; }
+.app-card.spe { background: #fdba74; }
+.app-card.st2s { background: #f9a8d4; }
+.app-card.bts { background: #93c5fd; }
+
+/* =========================
+   BIENVENUE
+========================= */
+
 .card.welcome {
   max-width: 800px;
   margin: 30px auto 20px auto;
   padding: 25px;
   border-radius: 16px;
-  background: #ffffff;
+  background: white;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   border-left: 6px solid #a0a7b1;
   text-align: center;
@@ -330,64 +312,41 @@ header {
   line-height: 1.6;
   font-size: 15px;
 }
-/* mobile */
-@media (max-width: 600px) {
-  .home-container {
-    grid-template-columns: 1fr;
-  }
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 13px;
+  color: #6f7680;
+  border-top: 1px solid #ddd;
+  background: white;
 }
 
-@media (max-width: 600px) {
+/* =========================
+   MOBILE
+========================= */
 
-  /* cartes en colonne propre */
+@media (max-width: 600px) {
   .home-container {
     grid-template-columns: 1fr;
     gap: 15px;
     padding: 10px;
-    margin: 20px auto;
   }
 
-  /* cartes plus grandes et lisibles */
-  .app-card {
-    height: 110px;
-    font-size: 18px;
+  header {
+    padding: 25px 10px;
   }
 
-  /* bienvenue plus compact */
   .card.welcome {
     margin: 15px 10px;
     padding: 18px;
-  }
-
-  /* header plus léger */
-  header {
-    padding: 25px 10px;
   }
 
   .top-left-info {
     font-size: 10px;
   }
 }
-
-/* ===== COULEUR PAR PAGE ===== */
-
-.seconde header,
-.seconde .card {
-  border-left: 6px solid #a78bfa;
-}
-
-.spe header,
-.spe .card {
-  border-left: 6px solid #fdba74;
-}
-
-.st2s header,
-.st2s .card {
-  border-left: 6px solid #f9a8d4;
-}
-
-.bts header,
-.bts .card {
-  border-left: 6px solid #93c5fd;
-}
-
