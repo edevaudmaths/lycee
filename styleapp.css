@@ -5,21 +5,10 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
   color: #1e2a38;
+  min-height: 100%;
   background: #f5f7fb;
-}
-
-/* IMPORTANT : évite les "trous blancs" */
-body {
-  min-height: 100vh;
-}
-.home-info {
-  text-align: center;
-  font-size: 11px;
-  color: #8a8a8a;
-  margin-top: 6px;
-  font-style: italic;
 }
 /* bloc info en haut à gauche */
 .top-left-info {
@@ -32,8 +21,14 @@ body {
   font-style:italic;
   line-height: 1.3;
 }
+/* évite les trous blancs iOS */
+body {
+  min-height: 100vh;
+  -webkit-tap-highlight-color: transparent;
+}
+
 /* =========================
-   FOND PAR PAGE
+   FONDS PAR FILIÈRE
 ========================= */
 
 body.seconde { background: #f3e8ff; }
@@ -42,34 +37,41 @@ body.st2s    { background: #ffe6ef; }
 body.bts     { background: #e8f2ff; }
 
 /* =========================
-   HEADER
+   HEADER STYLE APP
 ========================= */
 
 header {
+  position: relative;
   background: #8b9199;
   color: white;
   text-align: center;
-  padding: 40px 20px;
+  padding: 32px 20px;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 700;
 }
 
 /* =========================
-   MAIN (IMPORTANT)
+   MAIN (IMPORTANT ANTI-RUPTURE)
 ========================= */
 
 main {
-  background: transparent;
   min-height: calc(100vh - 160px);
-  padding: 20px;
+  padding: 16px;
+  background: transparent;
 }
 
 /* =========================
-   MENU
+   MENU (APP STYLE)
 ========================= */
 
 .menu {
   display: flex;
   justify-content: center;
-  gap: 12px;
+  gap: 10px;
   flex-wrap: wrap;
   margin-top: 10px;
 }
@@ -77,15 +79,16 @@ main {
 .menu-btn {
   background: white;
   color: #8b9199;
-  padding: 10px 16px;
+  padding: 9px 14px;
   border-radius: 12px;
   text-decoration: none;
-  font-weight: bold;
-  transition: 0.2s;
+  font-weight: 600;
+  transition: 0.2s ease;
 }
 
 .menu-btn:hover {
-  background: #b8bec6;
+  transform: translateY(-1px);
+  background: #d1d5db;
   color: white;
 }
 
@@ -101,7 +104,7 @@ main {
 .sub-menu {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 8px;
   flex-wrap: wrap;
   margin-top: 10px;
 }
@@ -110,10 +113,15 @@ main {
   background: white;
   border: 2px solid #8b9199;
   color: #8b9199;
-  padding: 8px 14px;
+  padding: 7px 12px;
   border-radius: 10px;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.sub-btn:hover {
+  background: #eef1f5;
 }
 
 .sub-btn.active {
@@ -123,21 +131,24 @@ main {
 }
 
 /* =========================
-   SEARCH
+   SEARCH (STYLE APP)
 ========================= */
 
 .search-box {
   display: flex;
   justify-content: center;
-  margin: 15px 0;
+  margin: 12px 0;
 }
 
 .search-box input {
   width: 60%;
-  max-width: 400px;
-  padding: 10px;
-  border-radius: 10px;
+  max-width: 420px;
+  padding: 10px 12px;
+  border-radius: 12px;
   border: 2px solid #8b9199;
+  outline: none;
+  font-size: 14px;
+  background: white;
 }
 
 /* =========================
@@ -155,17 +166,17 @@ main {
 }
 
 /* =========================
-   GRILLE 2 COLONNES (IMPORTANT)
+   GRILLE 2 COLONNES (CORE RULE)
 ========================= */
 
 .cards-container {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px;
-  padding: 20px;
+  gap: 14px;
+  padding: 10px;
 }
 
-/* MOBILE → 1 colonne uniquement */
+/* mobile → 1 colonne uniquement */
 @media (max-width: 700px) {
   .cards-container {
     grid-template-columns: 1fr;
@@ -173,15 +184,16 @@ main {
 }
 
 /* =========================
-   CARD
+   CARD (STYLE NOTION APP)
 ========================= */
 
 .card {
   background: white;
-  padding: 18px;
+  padding: 16px;
   border-radius: 14px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-  transition: 0.2s;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  transition: 0.2s ease;
+  margin: 0;
 }
 
 .card:hover {
@@ -189,27 +201,27 @@ main {
 }
 
 .card h3 {
-  margin-top: 0;
+  margin: 0 0 8px 0;
   color: #6f7680;
 }
 
 /* =========================
-   ACTIONS
+   ACTION BUTTONS
 ========================= */
 
 .actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
   margin-top: 10px;
 }
 
 .actions a {
   display: inline-block;
-  padding: 8px 12px;
+  padding: 7px 10px;
   border-radius: 10px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
   color: #1e2a38;
   background: rgba(0,0,0,0.06);
   transition: 0.2s;
@@ -221,13 +233,13 @@ main {
 }
 
 /* =========================
-   COULEURS PAR PAGE
+   COULEURS PAR FILIÈRE (CONSERVÉES)
 ========================= */
 
-.seconde .card { border-left: 6px solid #a78bfa; }
-.spe .card     { border-left: 6px solid #fdba74; }
-.st2s .card    { border-left: 6px solid #f9a8d4; }
-.bts .card     { border-left: 6px solid #93c5fd; }
+.seconde .card { border-left: 5px solid #a78bfa; }
+.spe .card     { border-left: 5px solid #fdba74; }
+.st2s .card    { border-left: 5px solid #f9a8d4; }
+.bts .card     { border-left: 5px solid #93c5fd; }
 
 .seconde .actions a { background: rgba(167,139,250,0.18); }
 .spe .actions a     { background: rgba(253,186,116,0.18); }
@@ -235,38 +247,13 @@ main {
 .bts .actions a     { background: rgba(147,197,253,0.18); }
 
 /* =========================
-   ACCUEIL (IMPORTANT BUG FIX)
-========================= */
-.home-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 14px;          /* ↓ réduit */
-  max-width: 700px;
-  margin: 20px auto;  /* ↓ réduit */
-  padding: 10px;      /* ↓ réduit */
-}
-
-.app-card {
-  height: 100px;      /* ↓ légèrement réduit */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-.app-card.seconde { background: #a78bfa; }
-.app-card.spe     { background: #fdba74; }
-.app-card.st2s    { background: #f9a8d4; }
-.app-card.bts     { background: #93c5fd; }
-
-/* =========================
-   BIENVENUE
+   BIENVENUE CARD
 ========================= */
 
 .card.welcome {
   max-width: 800px;
-  margin: 30px auto;
-  padding: 25px;
+  margin: 25px auto;
+  padding: 22px;
   border-radius: 16px;
   background: white;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -283,21 +270,21 @@ main {
   padding: 15px;
   font-size: 13px;
   color: #6f7680;
-  border-top: 1px solid #ddd;
   background: white;
+  border-top: 1px solid #ddd;
+}
+.footer a:hover {
+  text-decoration: underline;
 }
 
 /* =========================
-   MOBILE SAFE
+   FIX iPHONE (CRITIQUE)
 ========================= */
 
-@media (max-width: 600px) {
+html {
+  background: #f5f7fb;
+}
 
-  .home-container {
-    grid-template-columns: 1fr;
-  }
-
-  body {
-    overflow-x: hidden;
-  }
+body {
+  overflow-x: hidden;
 }
