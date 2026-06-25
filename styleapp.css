@@ -134,19 +134,23 @@ header {
 }
 
 /* ===== CARDS ===== */
-.card {
-  background: white;
-  padding: 18px;
-  margin-bottom: 15px;
-  border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-}
 
 .card h3 {
   margin-top: 0;
   color: #8b9199;
 }
+.card {
+  background: white;
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  transition: 0.2s;
+}
 
+.card:hover {
+  transform: translateY(-2px);
+}
 /* ===== 2 COLONNES ===== */
 .cards-container {
   display: grid;
