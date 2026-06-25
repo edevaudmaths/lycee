@@ -26,8 +26,9 @@ body {
   color: #333;
 }
 
-.menu-btn:hover {
-  border-color: #333;
+.menu-btn.active {
+  background: #0b2d4d;
+  color: white;
 }
 
 /* ===== SOUS MENU ===== */
@@ -35,6 +36,79 @@ body {
   display: flex;
   justify-content: center;
   gap: 10px;
+  margin: 10px;
+}
+
+.sub-btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  background: white;
+}
+
+.sub-btn.active {
+  background: #0b2d4d;
+  color: white;
+}
+
+/* ===== SECTIONS ===== */
+.sub-section {
+  display: none;
+}
+
+.sub-section.active {
+  display: block;
+}
+
+/* ===== GRILLE ===== */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ===== CARDS ===== */
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+/* ===== BANDEAU ===== */
+.card-header {
+  background: #0b2d4d;
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+}
+
+/* ===== BOUTONS ACTIONS ===== */
+.actions a {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 5px 5px 0 0;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #0b2d4d;
+  color: #0b2d4d;
+}
+
+.actions a:hover {
+  background: #0b2d4d;
+  color: white;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 800px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}  gap: 10px;
   margin: 10px;
 }
 
