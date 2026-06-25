@@ -308,3 +308,23 @@ header {
     grid-template-columns: 1fr;
   }
 }
+/* ===== CADRE BIENVENUE ===== */
+.welcome-card {
+  background: white;
+  max-width: 800px;
+  margin: 30px auto 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.welcome-card h2 {
+  margin-top: 0;
+  color: #0b2d4d;
+}
+
+.welcome-card p {
+  color: #555;
+  line-height: 1.5;
+}
