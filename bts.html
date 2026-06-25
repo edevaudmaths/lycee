@@ -6,117 +6,119 @@
   <link rel="stylesheet" href="styleapp.css">
 </head>
 
-<body class="spe" >
+<body class="bts">
 
 <header>
+
   <h1>BTS CAV2</h1>
 
   <nav class="menu">
     <a class="menu-btn" href="index.html">Accueil</a>
-    <a class="menu-btn " href="seconde.html">Seconde</a>
-    <a class="menu-btn  " href="spe.html">Première Spé</a>
-    <a class="menu-btn " href="st2s.html">Première ST2S</a>
+    <a class="menu-btn" href="seconde.html">Seconde</a>
+    <a class="menu-btn" href="spe.html">Première Spé</a>
+    <a class="menu-btn" href="st2s.html">Première ST2S</a>
     <a class="menu-btn active" href="bts.html">BTS</a>
   </nav>
 
   <div class="sub-menu">
     <button class="sub-btn active" onclick="showSec('cl',event)">Cours et exercices</button>
-
-   
     <button class="sub-btn" onclick="showSec('ds',event)">DS</button>
   </div>
+
 </header>
+
+<main>
+
+<!-- SEARCH -->
 <div class="search-box">
   <input type="text" id="searchInput" placeholder="🔎 Rechercher un chapitre..." onkeyup="searchChapters()">
 </div>
-<main>
 
-
-
-<!-- CLASSE -->
+<!-- ================= COURS ================= -->
 <section id="cl" class="sub-section active">
-<div class="cards-container">
-  <div class="card">
-    <h3>Chapitre 1 : Les équations différentielles linéaires du premier ordre </h3>
-    <p>...</p>
 
-    <div class="actions">
- <a href="#" target="_blank">🐟 Rappels sur la dérivation</a>
-      <a href="#" target="_blank">📖 Cours</a>
-      <a href="#" target="_blank">✏️ Exercices</a>
-      <a href="#" target="_blank">✅ Corrigé</a>
+  <div class="cards-container">
 
+    <div class="card">
+      <h3>Chapitre 1 : Équations différentielles du 1er ordre</h3>
+      <p>...</p>
+
+      <div class="actions">
+        <a href="#">🐟 Rappels sur la dérivation</a>
+        <a href="#">📖 Cours</a>
+        <a href="#">✏️ Exercices</a>
+        <a href="#">✅ Corrigé</a>
+      </div>
     </div>
-  </div>
 
-  <div class="card">
-    <h3>Chapitre 2 :Probabilités : lois discrètes (rappels et nouveautés) </h3>
-    <p>....</p>
+    <div class="card">
+      <h3>Chapitre 2 : Probabilités discrètes</h3>
+      <p>...</p>
 
-    <div class="actions">
-       <a href="#" target="_blank">📖 Cours</a>
-      <a href="#" target="_blank">✏️ Exercices</a>
-      <a href="#" target="_blank">✅ Corrigé</a>
-
+      <div class="actions">
+        <a href="#">📖 Cours</a>
+        <a href="#">✏️ Exercices</a>
+        <a href="#">✅ Corrigé</a>
+      </div>
     </div>
-  </div>
 
-  <div class="card">
-    <h3>Chapitre 3 :Probabilités : lois continues </h3>
-    <p>....</p>
+    <div class="card">
+      <h3>Chapitre 3 : Probabilités continues</h3>
+      <p>...</p>
 
-    <div class="actions">
-       <a href="#" target="_blank">📖 Cours</a>
-      <a href="#" target="_blank">✏️ Exercices</a>
-      <a href="#" target="_blank">✅ Corrigé</a>
-
+      <div class="actions">
+        <a href="#">📖 Cours</a>
+        <a href="#">✏️ Exercices</a>
+        <a href="#">✅ Corrigé</a>
+      </div>
     </div>
-  </div>
 
-  <div class="card">
-    <h3>Chapitre 4 : Les équations différentielles linéaires du second ordre</h3>
-    <p>....</p>
+    <div class="card">
+      <h3>Chapitre 4 : Équations différentielles du second ordre</h3>
+      <p>...</p>
 
-    <div class="actions">
-       <a href="#" target="_blank">📖 Cours</a>
-      <a href="#" target="_blank">✏️ Exercices</a>
-      <a href="#" target="_blank">✅ Corrigé</a>
-
+      <div class="actions">
+        <a href="#">📖 Cours</a>
+        <a href="#">✏️ Exercices</a>
+        <a href="#">✅ Corrigé</a>
+      </div>
     </div>
-  </div>
 
-  <div class="card">
-    <h3>Chapitre 5 :Calcul matriciel </h3>
-    <p>....</p>
+    <div class="card">
+      <h3>Chapitre 5 : Calcul matriciel</h3>
+      <p>...</p>
 
-    <div class="actions">
-       <a href="#" target="_blank">📖 Cours</a>
-      <a href="#" target="_blank">✏️ Exercices</a>
-      <a href="#" target="_blank">✅ Corrigé</a>
-
+      <div class="actions">
+        <a href="#">📖 Cours</a>
+        <a href="#">✏️ Exercices</a>
+        <a href="#">✅ Corrigé</a>
+      </div>
     </div>
-  </div>
+
   </div>
 
 </section>
 
-
-<!-- DS -->
+<!-- ================= DS ================= -->
 <section id="ds" class="sub-section">
- <div class="cards-container">
-  <div class="card">
-    <h3>DS 1</h3>
 
-    <div class="actions">
-      <a href="#" target="_blank">📄 Sujet</a>
-      <a href="#" target="_blank">✅ Correction</a>
+  <div class="cards-container">
+
+    <div class="card">
+      <h3>DS 1</h3>
+      <div class="actions">
+        <a href="#">📄 Sujet</a>
+        <a href="#">✅ Correction</a>
+      </div>
     </div>
+
   </div>
-</div>
+
 </section>
 
 </main>
 
 <script src="script.js"></script>
+
 </body>
 </html>
