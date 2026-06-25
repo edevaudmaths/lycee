@@ -9,7 +9,7 @@ body {
 
 /* ===== HEADER ===== */
 header {
-  background: #0b2d4d;
+  background: #555555;
   color: white;
   padding: 20px;
   text-align: center;
@@ -26,7 +26,7 @@ header {
 
 .menu-btn {
   background: white;
-  color: #0b2d4d;
+  color: #555555;
   padding: 10px 16px;
   border-radius: 12px;
   text-decoration: none;
@@ -35,12 +35,12 @@ header {
 }
 
 .menu-btn:hover {
-  background: #1f6feb;
+  background: #8a8a8a;
   color: white;
 }
 
 .menu-btn.active {
-  background: #1f6feb;
+  background: #8a8a8a;
   color: white;
 }
 
@@ -56,13 +56,13 @@ header {
   max-width: 400px;
   padding: 10px 12px;
   border-radius: 10px;
-  border: 2px solid #0b2d4d;
+  border: 2px solid #555555;
   outline: none;
   font-size: 14px;
 }
 
 .search-box input:focus {
-  border-color: #1f6feb;
+  border-color: #8a8a8a;
 }
 
 /* ===== SUB MENU ===== */
@@ -76,8 +76,8 @@ header {
 
 .sub-btn {
   background: white;
-  border: 2px solid #0b2d4d;
-  color: #0b2d4d;
+  border: 2px solid #555555;
+  color: #555555;
   padding: 8px 14px;
   border-radius: 10px;
   cursor: pointer;
@@ -85,7 +85,7 @@ header {
 }
 
 .sub-btn.active {
-  background: #0b2d4d;
+  background: #555555;
   color: white;
 }
 
@@ -112,7 +112,7 @@ header {
 
 .card h3 {
   margin-top: 0;
-  color: #0b2d4d;
+  color: #555555;
 }
 
 /* ===== 2 COLONNES ===== */
@@ -134,7 +134,7 @@ header {
 }
 
 .actions a {
-  background: #1f6feb;
+  background: #555555;
   color: white;
   padding: 8px 12px;
   border-radius: 10px;
@@ -150,7 +150,7 @@ header {
 .external-btn {
   display: inline-block;
   margin-top: 10px;
-  background: #0b2d4d;
+  background: #555555;
   color: white;
   padding: 8px 12px;
   border-radius: 10px;
@@ -159,5 +159,5 @@ header {
 }
 
 .external-btn:hover {
-  background: #1f6feb;
+  background: #555555;
 }
