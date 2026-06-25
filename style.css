@@ -174,20 +174,67 @@ body.bts .card-header {
   gap: 10px;
   margin-top: 10px;
 }
-
+/* ===== BOUTONS PDF / EXOS / VIDEOS ===== */
 .actions a {
-  background: #1f6feb;
-  color: white;
-  padding: 8px 12px;
-  border-radius: 10px;
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 5px 5px 0 0;
+  border-radius: 8px;
   text-decoration: none;
-  font-size: 14px;
+  font-weight: bold;
+  background: white;
+  border: 2px solid #ddd;
+  transition: 0.2s;
 }
 
+/* hover général */
 .actions a:hover {
-  background: #0b4fc2;
+  transform: translateY(-2px);
 }
 
+/* ===== SECONDE ===== */
+body.seconde .actions a {
+  border-color: #0b2d4d;
+  color: #0b2d4d;
+}
+
+body.seconde .actions a:hover {
+  background: #0b2d4d;
+  color: white;
+}
+
+/* ===== SPE ===== */
+body.spe .actions a {
+  border-color: #6a1b9a;
+  color: #6a1b9a;
+}
+
+body.spe .actions a:hover {
+  background: #6a1b9a;
+  color: white;
+}
+
+/* ===== ST2S ===== */
+body.st2s .actions a {
+  border-color: #2e7d32;
+  color: #2e7d32;
+}
+
+body.st2s .actions a:hover {
+  background: #2e7d32;
+  color: white;
+}
+
+/* ===== BTS ===== */
+body.bts .actions a {
+  border-color: #ef6c00;
+  color: #ef6c00;
+}
+
+body.bts .actions a:hover {
+  background: #ef6c00;
+  color: white;
+}
 .external-btn {
   display: inline-block;
   margin-top: 10px;
