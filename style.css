@@ -6,7 +6,26 @@ body {
   background: #f5f7fb;
   color: #1e2a38;
 }
+.seconde main {
+  background: #f3e8ff;
+}
 
+.spe main {
+  background: #fff1e6;
+}
+
+.st2s main {
+  background: #ffe6ef;
+}
+
+.bts main {
+  background: #e8f2ff;
+}
+
+main {
+  border-radius: 20px;
+  padding: 20px;
+}
 /* ===== HEADER ===== */
 header {
   background: #555555;
