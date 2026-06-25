@@ -1,6 +1,4 @@
-
-/* ===== SOUS-ONGLETS ===== */
-function showSec(id, event) {
+function showSec(id) {
 
   const sections = document.querySelectorAll(".sub-section");
   sections.forEach(s => s.classList.remove("active"));
@@ -10,31 +8,37 @@ function showSec(id, event) {
   const buttons = document.querySelectorAll(".sub-btn");
   buttons.forEach(b => b.classList.remove("active"));
 
-  if (event) {
-    event.target.classList.add("active");
-  }
+  event.target.classList.add("active");
 }
 
-/* ===== MENU ACTIF AUTOMATIQUE ===== */
+/* MENU ACTIF AUTOMATIQUE */
 document.addEventListener("DOMContentLoaded", () => {
 
   const links = document.querySelectorAll(".menu-btn");
   const currentPage = window.location.pathname.split("/").pop();
 
   links.forEach(link => {
-    const linkPage = link.getAttribute("href");
-
-    if (linkPage === currentPage) {
+    if (link.getAttribute("href") === currentPage) {
       link.classList.add("active");
     }
   });
 
 });
 
-/* ===== BARRE DE RECHERCHE ===== */
+/* RECHERCHE */
 function searchChapters() {
 
   const input = document.getElementById("searchInput");
+  const filter = input.value.toLowerCase();
+
+  const cards = document.querySelectorAll(".card");
+
+  cards.forEach(card => {
+    const text = card.textContent.toLowerCase();
+    card.style.display = text.includes(filter) ? "" : "none";
+  });
+
+}  const input = document.getElementById("searchInput");
   const filter = input.value.toLowerCase();
 
   const chapters = document.querySelectorAll(".card");
