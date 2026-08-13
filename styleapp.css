@@ -10,6 +10,7 @@ html, body {
   min-height: 100%;
   background: #f5f7fb;
 }
+
 /* bloc info en haut à gauche */
 .top-left-info {
   position: absolute;
@@ -18,9 +19,10 @@ html, body {
   text-align: left;
   font-size: 12px;
   color: white;
-  font-style:italic;
+  font-style: italic;
   line-height: 1.3;
 }
+
 .logo-home {
   display: block;
   width: 100px !important;
@@ -32,6 +34,7 @@ html, body {
   object-fit: contain;
   margin-top: 8px;
 }
+
 .logo-link {
   position: absolute;
   top: 10px;
@@ -48,6 +51,7 @@ html, body {
   max-height: 75px !important;
   object-fit: contain;
 }
+
 /* évite les trous blancs iOS */
 body {
   min-height: 100vh;
@@ -60,8 +64,8 @@ body {
 
 body.seconde { background: #f3e8ff; }
 body.spe     { background: #fff1e6; }
-body.st2s    { background: #ffe6ef; }
-body.bts     { background: #e8f2ff; }
+body.st2s    { background: #eef5f0; }
+body.bts     { background: #f5f1e6; }
 
 /* =========================
    HEADER STYLE APP
@@ -101,6 +105,7 @@ h1 {
   margin-top: 8px;
   white-space: nowrap;
 }
+
 /* =========================
    MAIN (IMPORTANT ANTI-RUPTURE)
 ========================= */
@@ -114,6 +119,7 @@ main {
 /* =========================
    MENU (APP STYLE)
 ========================= */
+
 .menu {
   display: flex;
   justify-content: center;
@@ -122,6 +128,7 @@ main {
   flex-wrap: wrap;
   margin-top: 18px;
 }
+
 .menu-btn {
   background: white;
   color: #8b9199;
@@ -137,7 +144,10 @@ main {
   filter: brightness(0.95);
 }
 
-/* Couleur des onglets selon la filière */
+/* =========================
+   COULEUR DES ONGLETS
+========================= */
+
 .menu-btn.seconde-btn {
   background: #a78bfa;
   color: white;
@@ -149,16 +159,19 @@ main {
 }
 
 .menu-btn.st2s-btn {
-  background: #f9a8d4;
+  background: #a8c3b0;
   color: white;
 }
 
 .menu-btn.bts-btn {
-  background: #93c5fd;
+  background: #d8c28f;
   color: white;
 }
 
-/* Onglet actif légèrement plus foncé */
+/* =========================
+   ONGLET ACTIF
+========================= */
+
 body.seconde .menu-btn.seconde-btn {
   filter: brightness(0.88);
 }
@@ -174,9 +187,11 @@ body.st2s .menu-btn.st2s-btn {
 body.bts .menu-btn.bts-btn {
   filter: brightness(0.88);
 }
+
 /* =========================
    SUB MENU
 ========================= */
+
 .sub-menu {
   display: flex;
   justify-content: center;
@@ -185,6 +200,7 @@ body.bts .menu-btn.bts-btn {
   flex-wrap: wrap;
   margin-top: 14px;
 }
+
 .sub-btn {
   background: white;
   border: 2px solid #8b9199;
@@ -200,7 +216,10 @@ body.bts .menu-btn.bts-btn {
   filter: brightness(0.95);
 }
 
-/* Sous-onglets Seconde */
+/* =========================
+   SOUS-ONGLETS SECONDE
+========================= */
+
 body.seconde .sub-btn {
   border-color: #a78bfa;
   color: #7c5ac7;
@@ -211,7 +230,10 @@ body.seconde .sub-btn.active {
   color: white;
 }
 
-/* Sous-onglets Première Spé */
+/* =========================
+   SOUS-ONGLETS PREMIÈRE SPÉ
+========================= */
+
 body.spe .sub-btn {
   border-color: #fdba74;
   color: #d88732;
@@ -222,25 +244,31 @@ body.spe .sub-btn.active {
   color: white;
 }
 
-/* Sous-onglets ST2S */
+/* =========================
+   SOUS-ONGLETS ST2S
+========================= */
+
 body.st2s .sub-btn {
-  border-color: #f9a8d4;
-  color: #d66b9f;
+  border-color: #a8c3b0;
+  color: #648b73;
 }
 
 body.st2s .sub-btn.active {
-  background: #f9a8d4;
+  background: #a8c3b0;
   color: white;
 }
 
-/* Sous-onglets BTS */
+/* =========================
+   SOUS-ONGLETS BTS
+========================= */
+
 body.bts .sub-btn {
-  border-color: #93c5fd;
-  color: #4d88c7;
+  border-color: #d8c28f;
+  color: #9b8555;
 }
 
 body.bts .sub-btn.active {
-  background: #93c5fd;
+  background: #d8c28f;
   color: white;
 }
 
@@ -280,7 +308,7 @@ body.bts .sub-btn.active {
 }
 
 /* =========================
-   GRILLE 2 COLONNES (CORE RULE)
+   GRILLE 2 COLONNES
 ========================= */
 
 .cards-container {
@@ -347,18 +375,40 @@ body.bts .sub-btn.active {
 }
 
 /* =========================
-   COULEURS PAR FILIÈRE (CONSERVÉES)
+   COULEURS PAR FILIÈRE
 ========================= */
 
-.seconde .card { border-left: 5px solid #a78bfa; }
-.spe .card     { border-left: 5px solid #fdba74; }
-.st2s .card    { border-left: 5px solid #f9a8d4; }
-.bts .card     { border-left: 5px solid #93c5fd; }
+.seconde .card {
+  border-left: 5px solid #a78bfa;
+}
 
-.seconde .actions a { background: rgba(167,139,250,0.18); }
-.spe .actions a     { background: rgba(253,186,116,0.18); }
-.st2s .actions a    { background: rgba(249,168,213,0.18); }
-.bts .actions a     { background: rgba(147,197,253,0.18); }
+.spe .card {
+  border-left: 5px solid #fdba74;
+}
+
+.st2s .card {
+  border-left: 5px solid #a8c3b0;
+}
+
+.bts .card {
+  border-left: 5px solid #d8c28f;
+}
+
+.seconde .actions a {
+  background: rgba(167,139,250,0.18);
+}
+
+.spe .actions a {
+  background: rgba(253,186,116,0.18);
+}
+
+.st2s .actions a {
+  background: rgba(168,195,176,0.22);
+}
+
+.bts .actions a {
+  background: rgba(216,194,143,0.22);
+}
 
 /* =========================
    BIENVENUE CARD
@@ -374,18 +424,19 @@ body.bts .sub-btn.active {
   border-left: 6px solid #a0a7b1;
   text-align: center;
 }
+
 /* =========================
    ACCUEIL FIX FINAL (SAFE)
 ========================= */
+
 .home-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;          /* ↓ réduit */
-  max-width: 650px;   /* ↓ un peu plus serré */
-  margin: 10px auto;  /* ↓ réduit */
-  padding: 8px;       /* ↓ réduit */
+  gap: 10px;
+  max-width: 650px;
+  margin: 10px auto;
+  padding: 8px;
 }
-
 
 .app-card {
   display: flex;
@@ -409,11 +460,26 @@ body.bts .sub-btn.active {
   transform: scale(1.03);
   opacity: 0.9;
 }
-/* couleurs */
-.app-card.seconde { background: #a78bfa; }
-.app-card.spe     { background: #fdba74; }
-.app-card.st2s    { background: #f9a8d4; }
-.app-card.bts     { background: #93c5fd; }
+
+/* =========================
+   COULEURS DES CARTES ACCUEIL
+========================= */
+
+.app-card.seconde {
+  background: #a78bfa;
+}
+
+.app-card.spe {
+  background: #fdba74;
+}
+
+.app-card.st2s {
+  background: #a8c3b0;
+}
+
+.app-card.bts {
+  background: #d8c28f;
+}
 
 /* mobile uniquement */
 @media (max-width: 600px) {
@@ -421,6 +487,7 @@ body.bts .sub-btn.active {
     grid-template-columns: 1fr;
   }
 }
+
 /* =========================
    FOOTER
 ========================= */
@@ -433,6 +500,7 @@ body.bts .sub-btn.active {
   background: white;
   border-top: 1px solid #ddd;
 }
+
 .footer a:hover {
   text-decoration: underline;
 }
