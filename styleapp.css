@@ -81,6 +81,15 @@ h1 {
   font-weight: 700;
 }
 
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.accueil-btn {
+  margin-top: 8px;
+}
 /* =========================
    MAIN (IMPORTANT ANTI-RUPTURE)
 ========================= */
