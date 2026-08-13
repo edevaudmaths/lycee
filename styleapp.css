@@ -104,14 +104,6 @@ main {
    MENU (APP STYLE)
 ========================= */
 
-.menu {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-top: 10px;
-}
-
 .menu-btn {
   background: white;
   color: #8b9199;
@@ -124,26 +116,49 @@ main {
 
 .menu-btn:hover {
   transform: translateY(-1px);
-  background: #d1d5db;
+  filter: brightness(0.95);
+}
+
+/* Couleur des onglets selon la filière */
+.menu-btn.seconde-btn {
+  background: #a78bfa;
   color: white;
 }
 
-.menu-btn.active {
-  background: #a0a7b1;
+.menu-btn.spe-btn {
+  background: #fdba74;
   color: white;
 }
 
+.menu-btn.st2s-btn {
+  background: #f9a8d4;
+  color: white;
+}
+
+.menu-btn.bts-btn {
+  background: #93c5fd;
+  color: white;
+}
+
+/* Onglet actif légèrement plus foncé */
+body.seconde .menu-btn.seconde-btn {
+  filter: brightness(0.88);
+}
+
+body.spe .menu-btn.spe-btn {
+  filter: brightness(0.88);
+}
+
+body.st2s .menu-btn.st2s-btn {
+  filter: brightness(0.88);
+}
+
+body.bts .menu-btn.bts-btn {
+  filter: brightness(0.88);
+}
 /* =========================
    SUB MENU
 ========================= */
-
-.sub-menu {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin-top: 10px;
-}
 
 .sub-btn {
   background: white;
@@ -157,13 +172,51 @@ main {
 }
 
 .sub-btn:hover {
-  background: #eef1f5;
+  filter: brightness(0.95);
 }
 
-.sub-btn.active {
-  background: #a0a7b1;
+/* Sous-onglets Seconde */
+body.seconde .sub-btn {
+  border-color: #a78bfa;
+  color: #7c5ac7;
+}
+
+body.seconde .sub-btn.active {
+  background: #a78bfa;
   color: white;
-  border-color: #a0a7b1;
+}
+
+/* Sous-onglets Première Spé */
+body.spe .sub-btn {
+  border-color: #fdba74;
+  color: #d88732;
+}
+
+body.spe .sub-btn.active {
+  background: #fdba74;
+  color: white;
+}
+
+/* Sous-onglets ST2S */
+body.st2s .sub-btn {
+  border-color: #f9a8d4;
+  color: #d66b9f;
+}
+
+body.st2s .sub-btn.active {
+  background: #f9a8d4;
+  color: white;
+}
+
+/* Sous-onglets BTS */
+body.bts .sub-btn {
+  border-color: #93c5fd;
+  color: #4d88c7;
+}
+
+body.bts .sub-btn.active {
+  background: #93c5fd;
+  color: white;
 }
 
 /* =========================
