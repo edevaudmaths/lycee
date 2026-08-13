@@ -114,7 +114,14 @@ main {
 /* =========================
    MENU (APP STYLE)
 ========================= */
-
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
 .menu-btn {
   background: white;
   color: #8b9199;
@@ -170,7 +177,14 @@ body.bts .menu-btn.bts-btn {
 /* =========================
    SUB MENU
 ========================= */
-
+.sub-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
 .sub-btn {
   background: white;
   border: 2px solid #8b9199;
