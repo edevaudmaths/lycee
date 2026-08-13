@@ -64,6 +64,489 @@ body {
 
 body.seconde { background: #f3e8ff; }
 body.spe     { background: #fff1e6; }
+body.st2s    { background: #f0f6f2; }
+body.bts     { background: #f8f5ec; }
+
+/* =========================
+   HEADER STYLE APP
+========================= */
+
+header {
+  position: relative;
+  background: #8b9199;
+  color: white;
+  text-align: center;
+  padding: 60px 20px 32px;
+  margin: 0;
+  min-height: 150px;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 700;
+}
+
+.logo-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 10;
+}
+
+.logo-container .logo-link {
+  position: static;
+}
+
+.accueil-btn {
+  margin-top: 8px;
+  white-space: nowrap;
+}
+
+/* =========================
+   MAIN (IMPORTANT ANTI-RUPTURE)
+========================= */
+
+main {
+  min-height: calc(100vh - 160px);
+  padding: 16px;
+  background: transparent;
+}
+
+/* =========================
+   MENU (APP STYLE)
+========================= */
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.menu-btn {
+  background: white;
+  color: #8b9199;
+  padding: 9px 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.menu-btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(0.95);
+}
+
+/* =========================
+   COULEUR DES ONGLETS
+========================= */
+
+.menu-btn.seconde-btn {
+  background: #a78bfa;
+  color: white;
+}
+
+.menu-btn.spe-btn {
+  background: #fdba74;
+  color: white;
+}
+
+.menu-btn.st2s-btn {
+  background: #c5d9cc;
+  color: #4f6f5b;
+}
+
+.menu-btn.bts-btn {
+  background: #e4d5ae;
+  color: #9a895f;
+}
+
+/* =========================
+   ONGLET ACTIF
+========================= */
+
+body.seconde .menu-btn.seconde-btn {
+  filter: brightness(0.88);
+}
+
+body.spe .menu-btn.spe-btn {
+  filter: brightness(0.88);
+}
+
+body.st2s .menu-btn.st2s-btn {
+  filter: brightness(0.88);
+}
+
+body.bts .menu-btn.bts-btn {
+  filter: brightness(0.88);
+}
+
+/* =========================
+   SUB MENU
+========================= */
+
+.sub-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+.sub-btn {
+  background: white;
+  border: 2px solid #8b9199;
+  color: #8b9199;
+  padding: 7px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.sub-btn:hover {
+  filter: brightness(0.95);
+}
+
+/* =========================
+   SOUS-ONGLETS SECONDE
+========================= */
+
+body.seconde .sub-btn {
+  border-color: #a78bfa;
+  color: #7c5ac7;
+}
+
+body.seconde .sub-btn.active {
+  background: #a78bfa;
+  color: white;
+}
+
+/* =========================
+   SOUS-ONGLETS PREMIÈRE SPÉ
+========================= */
+
+body.spe .sub-btn {
+  border-color: #fdba74;
+  color: #d88732;
+}
+
+body.spe .sub-btn.active {
+  background: #fdba74;
+  color: white;
+}
+
+/* =========================
+   SOUS-ONGLETS ST2S
+========================= */
+
+body.st2s .sub-btn {
+  border-color: #c5d9cc;
+  color: #6d8b78;
+}
+
+body.st2s .sub-btn.active {
+  background: #c5d9cc;
+  color: #4f6f5b;
+}
+
+/* =========================
+   SOUS-ONGLETS BTS
+========================= */
+
+body.bts .sub-btn {
+  border-color: #e4d5ae;
+  color: #9a895f;
+}
+
+body.bts .sub-btn.active {
+  background: #e4d5ae;
+  color: #806f48;
+}
+
+/* =========================
+   SEARCH (STYLE APP)
+========================= */
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin: 12px 0;
+}
+
+.search-box input {
+  width: 60%;
+  max-width: 420px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 2px solid #8b9199;
+  outline: none;
+  font-size: 14px;
+  background: white;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.sub-section {
+  display: none;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.sub-section.active {
+  display: block;
+}
+
+/* =========================
+   GRILLE 2 COLONNES
+========================= */
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  padding: 10px;
+}
+
+/* mobile → 1 colonne uniquement */
+@media (max-width: 700px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   CARD (STYLE NOTION APP)
+========================= */
+
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  transition: 0.2s ease;
+  margin: 0;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card h3 {
+  margin: 0 0 8px 0;
+  color: #6f7680;
+}
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.actions a {
+  display: inline-block;
+  padding: 7px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 13px;
+  color: #1e2a38;
+  background: rgba(0,0,0,0.06);
+  transition: 0.2s;
+}
+
+.actions a:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.1);
+}
+
+/* =========================
+   COULEURS PAR FILIÈRE
+========================= */
+
+.seconde .card {
+  border-left: 5px solid #a78bfa;
+}
+
+.spe .card {
+  border-left: 5px solid #fdba74;
+}
+
+.st2s .card {
+  border-left: 5px solid #c5d9cc;
+}
+
+.bts .card {
+  border-left: 5px solid #e4d5ae;
+}
+
+.seconde .actions a {
+  background: rgba(167,139,250,0.18);
+}
+
+.spe .actions a {
+  background: rgba(253,186,116,0.18);
+}
+
+.st2s .actions a {
+  background: rgba(197,217,204,0.35);
+}
+
+.bts .actions a {
+  background: rgba(228,213,174,0.35);
+}
+
+/* =========================
+   BIENVENUE CARD
+========================= */
+
+.card.welcome {
+  max-width: 800px;
+  margin: 25px auto;
+  padding: 22px;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-left: 6px solid #a0a7b1;
+  text-align: center;
+}
+
+/* =========================
+   ACCUEIL FIX FINAL (SAFE)
+========================= */
+
+.home-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 650px;
+  margin: 10px auto;
+  padding: 8px;
+}
+
+.app-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 90px;
+
+  border-radius: 15px;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  color: white;
+  text-decoration: none;
+
+  transition: 0.2s;
+}
+
+.app-card:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
+/* =========================
+   COULEURS DES CARTES ACCUEIL
+========================= */
+
+.app-card.seconde {
+  background: #a78bfa;
+}
+
+.app-card.spe {
+  background: #fdba74;
+}
+
+.app-card.st2s {
+  background: #c5d9cc;
+  color: #4f6f5b;
+}
+
+.app-card.bts {
+  background: #e4d5ae;
+  color: #806f48;
+}
+
+/* mobile uniquement */
+@media (max-width: 600px) {
+  .home-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 13px;
+  color: #6f7680;
+  background: white;
+  border-top: 1px solid #ddd;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   FIX iPHONE (CRITIQUE)
+========================= */
+
+html {
+  background: #f5f7fb;
+}
+
+body {
+  overflow-x: hidden;
+}
+.logo-link {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: block;
+  z-index: 10;
+}
+
+.logo-page {
+  display: block;
+  width: 75px !important;
+  height: 75px !important;
+  max-width: 75px !important;
+  max-height: 75px !important;
+  object-fit: contain;
+}
+
+/* évite les trous blancs iOS */
+body {
+  min-height: 100vh;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* =========================
+   FONDS PAR FILIÈRE
+========================= */
+
+body.seconde { background: #f3e8ff; }
+body.spe     { background: #fff1e6; }
 body.st2s    { background: #eef5f0; }
 body.bts     { background: #f5f1e6; }
 
