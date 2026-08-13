@@ -23,12 +23,12 @@ html, body {
 }
 .logo-home {
   display: block;
-  width: 55px !important;
-  height: 55px !important;
-  min-width: 55px !important;
-  min-height: 55px !important;
-  max-width: 55px !important;
-  max-height: 55px !important;
+  width: 65px !important;
+  height: 65px !important;
+  min-width: 65px !important;
+  min-height: 65px !important;
+  max-width: 65px !important;
+  max-height: 65px !important;
   object-fit: contain;
   margin-top: 8px;
 }
