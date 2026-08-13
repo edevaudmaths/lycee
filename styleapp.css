@@ -42,10 +42,10 @@ html, body {
 
 .logo-page {
   display: block;
-  width: 45px !important;
-  height: 45px !important;
-  max-width: 45px !important;
-  max-height: 45px !important;
+  width: 55px !important;
+  height: 55px !important;
+  max-width: 55px !important;
+  max-height: 55px !important;
   object-fit: contain;
 }
 /* évite les trous blancs iOS */
