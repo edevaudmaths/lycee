@@ -26,7 +26,12 @@ body {
   min-height: 100vh;
   -webkit-tap-highlight-color: transparent;
 }
-
+.logo-home {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  margin-top: 10px;
+}
 /* =========================
    FONDS PAR FILIÈRE
 ========================= */
