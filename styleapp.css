@@ -520,3 +520,18 @@ html {
 body {
   overflow-x: hidden;
 }
+
+/* =========================
+   COMPTEUR DE VISITES
+========================= */
+
+.page-counter {
+  text-align: center;
+  margin: 25px 0 15px;
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
+.page-counter img {
+  vertical-align: middle;
+}
